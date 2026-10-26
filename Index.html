@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b6f68">
+  <meta name="description" content="Ayyubi Tailor Boutique — women's clothing stitching and custom tailoring in Hindaun, Karauli, Rajasthan.">
+  <title>Ayyubi Tailor Boutique | Women's Tailoring</title>
+  <style>
+:root{--teal:#075e59;--teal-dark:#073f3d;--teal-soft:#e7f3ef;--gold:#c9a45c;--gold-light:#f4e8c9;--ink:#203b38;--muted:#667b76;--white:#fff;--cream:#fffdf7;--line:#e6e0d1;--shadow:0 14px 38px rgba(7,63,61,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}a{color:inherit}img{max-width:100%}
+.topbar{background:var(--teal-dark);text-align:center;padding:9px 14px;font-size:.9rem;color:#f8e9c5;letter-spacing:.04em}header{position:sticky;top:0;z-index:5;background:rgba(255,253,247,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);box-shadow:0 4px 18px rgba(7,63,61,.04)}
+.nav{max-width:1120px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.nav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--teal-dark)}.nav a:hover{color:var(--gold)}
+.logo,.brand,.site-title{color:var(--teal-dark)}h1,h2,h3{line-height:1.18;color:var(--teal-dark);letter-spacing:-.025em}h1{font-size:clamp(2.6rem,7vw,5rem)}h2{font-size:clamp(1.8rem,4vw,2.8rem)}p{color:var(--muted)}
+section{padding:64px 20px}.container,.wrap,.hero-inner{max-width:1120px;margin:0 auto}.hero{background:radial-gradient(circle at 85% 20%,rgba(201,164,92,.18),transparent 30%),linear-gradient(135deg,#eaf5f1 0%,#fffdf7 60%,#f7efdc 100%);border-bottom:1px solid var(--line);padding:76px 20px}.hero p{max-width:650px;font-size:1.08rem}.eyebrow,.kicker{color:#987538;text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:800}
+button,.btn,.button,input[type=submit]{border:0;border-radius:999px;background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:white;padding:13px 22px;font-weight:700;text-decoration:none;cursor:pointer;box-shadow:0 7px 18px rgba(7,94,89,.16);transition:transform .2s,box-shadow .2s}button:hover,.btn:hover,.button:hover,input[type=submit]:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(7,94,89,.23)}.btn.secondary,.button.secondary{background:var(--gold-light);color:var(--teal-dark);box-shadow:none;border:1px solid #e6d3a4}
+.card,.service-card,.product-card,.design-card,.about-card,.form-card{background:white;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}.card:hover,.service-card:hover,.product-card:hover{transform:translateY(-4px);transition:transform .2s}.service-card,.product-card,.design-card{padding:22px}.product-card img,.design-card img{border-radius:14px;object-fit:cover}.price{color:#987538;font-size:1.35rem;font-weight:800}.badge{display:inline-block;border-radius:999px;background:var(--teal-soft);color:var(--teal-dark);padding:5px 12px;font-size:.82rem;font-weight:700}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d7e1dc;border-radius:12px;background:#fffefa;color:var(--ink);font:inherit}input:focus,select:focus,textarea:focus{outline:2px solid #b9d9ce;border-color:var(--teal)}label{font-weight:700;color:var(--teal-dark)}
+footer{background:var(--teal-dark);color:#f7f1e4;padding:36px 20px;text-align:center}footer p,footer a{color:#e1eee8}.section-soft{background:#f0f6f2}.section-gold{background:linear-gradient(135deg,#fbf5e6,#fffdf7)}hr{border:0;border-top:1px solid var(--line)}
+@media(max-width:700px){.nav{justify-content:center;padding:10px 12px;gap:10px}.nav a{font-size:.82rem}.hero{padding:52px 18px}section{padding:46px 16px}.service-card,.product-card,.design-card{border-radius:16px}}
+
+/* Ayyubi logo + polished responsive layout */
+.brand{display:flex;align-items:center;gap:10px;white-space:nowrap;font-family:Georgia,serif;font-weight:800;font-size:1.18rem;letter-spacing:.01em}
+.brand-mark{width:44px;height:44px;display:inline-grid;place-items:center;flex:0 0 44px;border-radius:50%;background:linear-gradient(145deg,#075e59,#073f3d);border:2px solid #c9a45c;color:#f4e8c9;font-size:1.45rem;box-shadow:0 3px 10px #073f3d24}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr);align-items:center;gap:36px}
+.hero-art{min-height:300px;position:relative;border-radius:48% 48% 24px 24px;background:linear-gradient(145deg,#d7e9df,#fff8e7 65%,#e7d5a8);border:1px solid #e4d5ae;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.fabric{width:62%;height:82%;border-radius:48% 48% 12px 12px;background:repeating-linear-gradient(45deg,#075e59 0 10px,#0a746d 10px 20px);border:4px solid #c9a45c;box-shadow:0 16px 28px #073f3d24;position:relative}
+.fabric:before{content:'✦  ✧  ✦';position:absolute;top:20%;left:0;right:0;text-align:center;color:#f4e8c9;font-size:1.4rem;letter-spacing:.4em}
+.fabric:after{content:'AYYUBI';position:absolute;bottom:14%;left:0;right:0;text-align:center;color:#f4e8c9;font-family:Georgia,serif;letter-spacing:.2em;font-weight:bold}
+.float{position:absolute;background:#fffdf7;border:1px solid #e6d3a4;border-radius:999px;padding:10px 14px;color:#073f3d;font-size:.85rem;font-weight:700;box-shadow:0 8px 20px #073f3d18}.float.one{left:5%;bottom:20%}.float.two{right:4%;top:18%}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.section-head{max-width:760px;margin:0 auto 30px;text-align:center}.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.gallery{background:#073f3d;color:#fffdf7}.gallery h2,.gallery h3{color:#fffdf7}.gallery p{color:#e1eee8}.looks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.look{min-height:130px;border:1px solid #c9a45c;border-radius:18px;background:linear-gradient(135deg,#0a746d,#073f3d 65%,#c9a45c);display:flex;align-items:end;padding:18px;color:#fffdf7}.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:32px}.about-panel{background:linear-gradient(145deg,#e7f3ef,#fffdf7);border:1px solid #e6e0d1;border-radius:24px;padding:30px;text-align:center}.product-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product-tools{max-width:760px;margin:0 auto 28px;padding:22px;border:1px solid var(--line);border-radius:20px;background:#fff}
+@media(max-width:760px){
+ .nav{display:block;padding:10px 12px}.brand{justify-content:center;font-size:1.05rem;margin-bottom:10px}.brand-mark{width:38px;height:38px;flex-basis:38px;font-size:1.2rem}
+ .nav nav{display:flex;gap:7px;overflow-x:auto;white-space:nowrap;padding:8px 2px 5px;justify-content:flex-start;scrollbar-width:thin}.nav a{font-size:.82rem;flex-shrink:0}.hero{padding:34px 16px 26px}.hero-inner{grid-template-columns:1fr;gap:22px}.hero h1{font-size:clamp(2.3rem,11vw,3.4rem);margin:12px 0}.hero p{font-size:1rem}.hero-art{min-height:220px;max-height:250px}.fabric{width:48%;height:78%}.float{font-size:.75rem;padding:8px 10px}.buttons{display:grid;grid-template-columns:1fr;gap:10px}.buttons .btn{display:block;text-align:center;width:100%}section{padding:42px 16px}.services{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.services .card{padding:16px}.looks{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.look{min-height:105px;padding:12px}.about-grid{grid-template-columns:1fr;gap:22px}.product-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-tools{padding:16px}.section-head{margin-bottom:22px}
+}
+@media(max-width:380px){.services,.product-list{grid-template-columns:1fr}.brand{font-size:.98rem}.hero-art{min-height:190px}.looks{grid-template-columns:1fr 1fr}}
+.small{font-size:.82rem;color:var(--muted)}.note,.small-muted,.order-note{font-size:.9rem;color:var(--muted)}.product-card img{display:block;width:100%;height:240px;object-fit:cover;background:var(--teal-soft)}.product-card .edit-product{margin-top:10px;background:var(--gold-light);color:var(--teal-dark);box-shadow:none}.form-card{padding:22px}.product-form{display:grid;gap:14px}.product-form label{display:grid;gap:6px}.product-info{padding:14px}.product-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.order-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.order-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}.order-form{display:grid;gap:14px}.order-form label{display:grid;gap:6px}[hidden]{display:none!important}@media(max-width:700px){.order-grid{grid-template-columns:1fr}}\n</style>
+</head>
+<body>
+  <div class="topbar">Made with care, stitched with love ♡</div>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#home"><span class="brand-mark">🪡</span><span>Ayyubi Tailor Boutique</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#designs">Designs</a><a href="#products">Clothes & Prices</a><a href="#about">About</a><a href="#orders">Order</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow">WOMEN'S TAILORING & CUSTOM STITCHING</span>
+          <h1>Your Style,<br><span>Our Stitch.</span></h1>
+          <p>Thoughtfully stitched outfits made for your style and special moments. Explore women's tailoring for everyday wear, celebrations and custom designs.</p>
+          <div class="buttons"><a class="btn primary" href="#services">Explore Services</a><a class="btn secondary" href="#contact">Find Our Boutique</a><a class="btn primary" href="#orders">Order a Dress</a></div>
+        </div>
+        <div class="hero-art" aria-label="Pink fabric inspired boutique illustration">
+          <div class="fabric"></div><div class="float one">✂️ Custom Stitching</div><div class="float two">🌷 Made for You</div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="section-head"><div class="small">What we stitch</div><h2>Tailoring for Every Occasion</h2><p>Women's clothing stitching and custom tailoring, with care in every detail.</p></div>
+        <div class="services">
+          <article class="card"><div class="icon">👗</div><h3>Suits & Salwar Suits</h3><p>Everyday suits, festive suits and custom-fit outfits.</p></article>
+          <article class="card"><div class="icon">🌸</div><h3>Blouses & Kurtis</h3><p>Blouses, kurtis and designs tailored to your preference.</p></article>
+          <article class="card"><div class="icon">✨</div><h3>Gowns & Party Wear</h3><p>Special-occasion outfits for parties and celebrations.</p></article>
+          <article class="card"><div class="icon">💃</div><h3>Lehengas & Ethnic Wear</h3><p>Traditional outfits and custom ethnic wear.</p></article>
+          <article class="card"><div class="icon">🧵</div><h3>Custom Designs</h3><p>Bring your ideas and inspiration for a made-for-you look.</p></article>
+          <article class="card"><div class="icon">🪡</div><h3>Alterations</h3><p>Fit adjustments and clothing alterations, as needed.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" id="designs">
+      <div class="container">
+        <div class="section-head"><div class="small">Style inspiration</div><h2>Designs & Outfit Ideas</h2><p>A little inspiration for your next outfit.</p></div>
+        <div class="looks">
+          <div class="look"><strong>Elegant Suits</strong></div><div class="look"><strong>Festive Wear</strong></div><div class="look"><strong>Party Dresses</strong></div>
+          <div class="look"><strong>Everyday Kurtis</strong></div><div class="look"><strong>Traditional Looks</strong></div><div class="look"><strong>Custom Creations</strong></div>
+        </div>
+        <p class="note">These are decorative design placeholders. Replace them with photos of your own stitching and outfits when ready.</p>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-panel"><div class="big">🩷</div><h2>A Boutique Made for Your Style</h2><p>Peacock teal, champagne gold and ivory — a warm welcome to Ayyubi Tailor Boutique.</p></div>
+        <div><div class="small" style="color:var(--gold);font-weight:800;letter-spacing:.12em">ABOUT OUR BOUTIQUE</div><h2>Your Outfit, Your Choice</h2><p>We focus on women's clothing and custom stitching, from daily wear to special-occasion outfits. Share the style you have in mind and make it your own.</p><ul class="checks"><li>Women's clothing of different styles</li><li>Custom stitching and fit-focused tailoring</li><li>Traditional, casual and party-wear ideas</li><li>Local boutique in Hindaun, Rajasthan</li></ul></div>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div class="small">Ready to wear</div>
+          <h2>Our Clothes & Prices</h2>
+          <p>Browse available outfits and use the order form to enquire about a product.</p>
+        </div>
+        <div class="product-tools">
+          <h3>🔐 Boutique Owner Login</h3>
+          <p class="small-muted">Only the authorised boutique owner can sign in to manage photos and prices.</p>
+          <form id="loginForm" class="product-form">
+            <label>Owner email<input id="ownerEmail" type="email" autocomplete="username" required value="gori39166@gmail.com"></label>
+            <label>Password<input id="ownerPassword" type="password" autocomplete="current-password" required placeholder="Supabase owner password"></label>
+            <button class="btn primary full" type="submit">Owner Sign In</button>
+          </form>
+          <div id="ownerDashboard" hidden>
+            <hr><h3>➕ Add / Update a Product</h3>
+            <form id="productForm" class="product-form">
+              <label>Clothing photo<input id="productImage" type="file" accept="image/*" required></label>
+              <label>Clothing name<input id="productName" type="text" maxlength="80" required placeholder="e.g. Pink embroidered suit"></label>
+              <label>Price (₹)<input id="productPrice" type="number" min="0" step="1" required placeholder="e.g. 1299"></label>
+              <label>Size / details<input id="productDetails" type="text" maxlength="160" placeholder="e.g. M, L, XL; fabric details"></label>
+              <button class="btn primary full" type="submit">Save Product</button>
+            </form>
+            <button id="logoutButton" class="btn secondary" type="button">Sign Out</button>
+            <h3>📦 Customer Orders</h3><div id="ownerOrders" aria-live="polite"></div>
+          </div>
+          <p id="productStatus" class="small-muted" aria-live="polite">Customers can view products below. Owner sign-in is required to manage the catalogue.</p>
+        </div>
+        <div id="productList" class="product-list" aria-live="polite"></div>
+        <p id="emptyProducts" class="note">No products added yet. Use the form above to add your first outfit.</p>
+      </div>
+    </section>
+
+    <section class="order-section" id="orders">
+      <div class="container">
+        <div class="section-head"><div class="small">Place your request</div><h2>Order Your Custom Outfit</h2><p>Choose a ready-made outfit or describe the custom stitching you need. Submit your request directly through this website.</p></div>
+        <div class="order-grid">
+          <div class="order-card">
+            <h3>📝 Order Request Form</h3>
+            <form class="order-form" id="orderForm">
+              <label>Your name<input name="customerName" required autocomplete="name" placeholder="Enter your name"></label>
+              <label>Phone number<input name="phone" required type="tel" autocomplete="tel" placeholder="Your contact number"></label>
+              <label>Order type<select name="orderType" id="orderType" required><option>Ready-made clothing</option><option>Custom stitching</option><option>Alteration</option></select></label>
+<label>Product / clothing type<input name="productName" id="orderProduct" required maxlength="120" placeholder="e.g. Plazo Kurta Set or custom suit"></label>
+<label>Quantity<input name="quantity" type="number" min="1" max="20" value="1" required></label>
+              <label>Delivery address<textarea name="address" rows="3" required placeholder="Your complete address"></textarea></label>
+<label>Details / notes<textarea name="details" rows="4" placeholder="Size, colour, fabric, style or special instructions"></textarea></label>
+              <label>Required date<input name="neededBy" type="date"></label>
+              <button class="btn primary" type="submit">Submit Order Request</button>
+              <p class="order-note" id="formStatus" aria-live="polite">Your order request will be saved online. Do not enter payment details or passwords.</p>
+            </form>
+          </div>
+          <div class="order-card">
+            <h3>💗 Order in Person</h3>
+            <p>Place your order using the website form, or visit our boutique in person.</p>
+            <p><strong>Ayyubi Tailor Boutique</strong><br>Kutakpur, Bada Madarsa<br>Hindaun, Karauli, Rajasthan, India</p>
+            <a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kutakpur+Bada+Madarsa+Hindaun+Karauli+Rajasthan">Find Us on Maps</a>
+            <p class="order-note">For your privacy, avoid entering sensitive personal information. Your order request is sent to our online order system when you submit the form.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head"><div class="small">Visit us</div><h2>Come Say Hello</h2><p>We'd love to help you plan your next outfit.</p></div>
+        <div class="contact-box">
+          <div class="icon" style="margin:0 auto 12px">📍</div>
+          <h3>Ayyubi Tailor Boutique</h3>
+          <p class="address">Kutakpur, Bada Madarsa<br>Hindaun, Karauli, Rajasthan, India</p>
+          <p>For orders, please use the website order form above.</p>
+          <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kutakpur+Bada+Madarsa+Hindaun+Karauli+Rajasthan">Search Location on Maps</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><p><strong>Ayyubi Tailor Boutique</strong></p><p>Women's Clothing • Tailoring • Ready-to-wear</p><p>© <span id="year"></span> Ayyubi Tailor Boutique</p></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const SUPABASE_URL = 'https://mtkgozbemfzoytolbovc.supabase.co';
+    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_8dYEsOq1K2Rj8Ecr8k_Zew_VrTAd367';
+    const OWNER_EMAIL = 'gori39166@gmail.com';
+    const BUCKET = 'Product-photos';
+    if (!window.supabase || typeof window.supabase.createClient !== 'function') {
+      document.getElementById('formStatus').textContent = 'The online service did not load. Check your internet connection and reload this page.';
+      throw new Error('Supabase client library failed to load');
+    }
+    const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+    let products = [], owner = null;
+
+    const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const money = v => '₹' + Number(v || 0).toLocaleString('en-IN');
+    const setStatus = msg => document.getElementById('productStatus').textContent = msg;
+
+    function renderProducts() {
+      const list = document.getElementById('productList');
+      list.innerHTML = '';
+      document.getElementById('emptyProducts').style.display = products.length ? 'none' : 'block';
+      products.forEach(p => {
+        const card = document.createElement('article');
+        card.className = 'product-card';
+        card.innerHTML = `<img src="${esc(p.image_url)}" alt="${esc(p.name)}" loading="lazy">
+          <div class="product-info"><h3>${esc(p.name)}</h3><div class="price">${money(p.price)}</div>
+          <p>${esc(p.details || 'Please ask us for more details.')}</p>
+          <button class="btn primary order-product" type="button" data-name="${esc(p.name)}">Order this item</button>
+          ${owner ? `<button class="edit-product" type="button" data-id="${esc(p.id)}">Edit</button>` : ''}</div>`;
+        list.appendChild(card);
+      });
+      document.querySelectorAll('.order-product').forEach(b => b.onclick = () => {
+        document.getElementById('orderProduct').value = b.dataset.name;
+        document.getElementById('orderType').value = 'Ready-made clothing';
+        document.getElementById('orders').scrollIntoView({behavior:'smooth'});
+      });
+      document.querySelectorAll('.edit-product').forEach(b => b.onclick = () => {
+        const p = products.find(x => String(x.id) === b.dataset.id);
+        if (!p) return;
+        document.getElementById('productName').value = p.name || '';
+        document.getElementById('productPrice').value = p.price || '';
+        document.getElementById('productDetails').value = p.details || '';
+        document.getElementById('productImage').required = false;
+        document.getElementById('productForm').dataset.editId = p.id;
+        setStatus('Editing product. Choose a new photo only if you want to replace the old photo.');
+      });
+    }
+
+    async function loadProducts() {
+      let data, error;
+      try { ({data, error} = await db.from('products').select('id,name,price,image_url,details,created_at').order('created_at',{ascending:false})); }
+      catch (err) { console.error(err); setStatus('Could not connect to the catalogue. Check your internet connection and Supabase settings.'); return; }
+      if (error) { console.error(error); setStatus('Products could not load. Check the products table columns and public read policy in Supabase.'); return; }
+      products = data || []; renderProducts();
+      if (!owner) setStatus('Online catalogue loaded. Sign in as the owner to manage photos and prices.');
+    }
+
+    async function loadOrders() {
+      const box = document.getElementById('ownerOrders');
+      box.innerHTML = '<p>Loading orders…</p>';
+      let data, error;
+      try { ({data,error} = await db.from('orders').select('id,customer_name,phone,address,product_name,quantity,notes,created_at').order('created_at',{ascending:false}).limit(100)); }
+      catch (err) { console.error(err); box.innerHTML = '<p>Could not connect to orders. Check your internet connection.</p>'; return; }
+      if (error) { box.innerHTML = '<p>Could not load orders. Check the owner-only orders SELECT policy in Supabase.</p>'; console.error(error); return; }
+      if (!data.length) { box.innerHTML = '<p>No orders yet.</p>'; return; }
+      box.innerHTML = data.map(o => `<article class="card" style="padding:16px;margin:12px 0">
+        <strong>${esc(o.product_name)}</strong><p><b>Customer:</b> ${esc(o.customer_name)} · <b>Phone:</b> ${esc(o.phone)}</p>
+        <p><b>Quantity:</b> ${esc(o.quantity)} · <b>Address:</b> ${esc(o.address)}</p><p><b>Notes:</b> ${esc(o.notes || 'None')}</p>
+        <small>${esc(new Date(o.created_at).toLocaleString('en-IN'))}</small></article>`).join('');
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const email = document.getElementById('ownerEmail').value.trim().toLowerCase();
+      const password = document.getElementById('ownerPassword').value;
+      if (email !== OWNER_EMAIL) { setStatus('Only the authorised owner email can sign in.'); return; }
+      setStatus('Signing in…');
+      let data, error;
+      try { ({data,error} = await db.auth.signInWithPassword({email,password})); }
+      catch (err) { console.error(err); document.getElementById('ownerPassword').value = ''; setStatus('Could not connect to sign-in. Check your internet connection and try again.'); return; }
+      document.getElementById('ownerPassword').value = '';
+      if (error || !data.user || (data.user.email || '').toLowerCase() !== OWNER_EMAIL) {
+        setStatus('Sign-in failed. Check your owner email and password.'); console.error(error); return;
+      }
+      owner = data.user;
+      document.getElementById('ownerDashboard').hidden = false;
+      document.getElementById('loginForm').hidden = true;
+      setStatus('Signed in. You can manage products and view orders.');
+      renderProducts(); await loadOrders();
+    });
+
+    document.getElementById('logoutButton').addEventListener('click', async () => {
+      try { await db.auth.signOut(); } catch (err) { console.error(err); }
+      owner = null;
+      document.getElementById('ownerDashboard').hidden = true;
+      document.getElementById('loginForm').hidden = false;
+      document.getElementById('productForm').reset();
+      delete document.getElementById('productForm').dataset.editId;
+      document.getElementById('productImage').required = true;
+      renderProducts(); setStatus('Signed out.');
+    });
+
+    document.getElementById('productForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      if (!owner) { setStatus('Please sign in first.'); return; }
+      const form = document.getElementById('productForm');
+      const file = document.getElementById('productImage').files[0];
+      const name = document.getElementById('productName').value.trim();
+      const price = Number(document.getElementById('productPrice').value);
+      const details = document.getElementById('productDetails').value.trim();
+      if (!name || !Number.isFinite(price) || price < 0) { setStatus('Enter a product name and valid price.'); return; }
+      if (file && !file.type.startsWith('image/')) { setStatus('Please choose an image file.'); return; }
+      if (file && file.size > 5*1024*1024) { setStatus('Choose a photo smaller than 5 MB.'); return; }
+      const editId = form.dataset.editId;
+      let image_url = editId ? (products.find(p => String(p.id) === String(editId)) || {}).image_url : '';
+      setStatus('Saving product…');
+      if (file) {
+        const path = `${Date.now()}-${file.name.replace(/[^a-zA-Z0-9._-]/g,'-')}`;
+        let error;
+        try { ({error} = await db.storage.from(BUCKET).upload(path,file,{upsert:false})); }
+        catch (err) { console.error(err); setStatus('Photo upload could not connect. Check your internet and Storage settings.'); return; }
+        if (error) { setStatus('Photo upload failed. Check the Product-photos bucket and owner upload policies.'); console.error(error); return; }
+        image_url = db.storage.from(BUCKET).getPublicUrl(path).data.publicUrl;
+      }
+      if (!image_url) { setStatus('Please choose a product photo.'); return; }
+      const record = {name,price,image_url,details};
+      let result;
+      try { result = editId ? await db.from('products').update(record).eq('id',editId) : await db.from('products').insert(record); }
+      catch (err) { console.error(err); setStatus('Could not connect while saving. Check your internet and Supabase settings.'); return; }
+      if (result.error) { setStatus('Product not saved. Check the owner-only product policies in Supabase.'); console.error(result.error); return; }
+      form.reset(); delete form.dataset.editId; document.getElementById('productImage').required = true;
+      setStatus('Product saved online.'); await loadProducts();
+    });
+
+    document.getElementById('orderForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const d = new FormData(e.currentTarget);
+      const order = {
+        customer_name:String(d.get('customerName')||'').trim(),
+        phone:String(d.get('phone')||'').trim(),
+        address:String(d.get('address')||'').trim(),
+        product_name:String(d.get('productName')||'').trim(),
+        quantity:Number(d.get('quantity')||1),
+        notes:`Order type: ${d.get('orderType')}. Details: ${d.get('details')||'Not provided'}. Required date: ${d.get('neededBy')||'Not specified'}`
+      };
+      const out = document.getElementById('formStatus');
+      if (!order.customer_name || !order.phone || !order.address || !order.product_name || !Number.isInteger(order.quantity) || order.quantity < 1) {
+        out.textContent = 'Please complete all required fields correctly.'; return;
+      }
+      out.textContent = 'Submitting order…';
+      let error;
+      try { ({error} = await db.from('orders').insert(order)); }
+      catch (err) { console.error(err); out.textContent = 'Could not connect. Check your internet connection and try again.'; return; }
+      if (error) { console.error(error); out.textContent = 'Order was not submitted. Please try again later or visit the boutique.'; return; }
+      e.currentTarget.reset();
+      out.textContent = 'Thank you! Your order request was submitted successfully.';
+    });
+
+    window.addEventListener('unhandledrejection', event => {
+      console.error('Unexpected website request error:', event.reason);
+    });
+
+    (async function init() {
+      await loadProducts();
+      let data;
+      try { ({data} = await db.auth.getSession()); } catch (err) { console.error(err); setStatus('Catalogue is available, but owner session could not be checked.'); return; }
+      if (data.session && (data.session.user.email||'').toLowerCase() === OWNER_EMAIL) {
+        owner = data.session.user;
+        document.getElementById('ownerDashboard').hidden = false;
+        document.getElementById('loginForm').hidden = true;
+        renderProducts(); await loadOrders();
+      }
+    })();
+
+  </script>
+
+</body>
+</html>
